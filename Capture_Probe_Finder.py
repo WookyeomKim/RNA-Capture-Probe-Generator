@@ -61,7 +61,7 @@ class ProbeParameters:
     # ---------------------------------------------------------
     # [1] Input & Output Settings
     # ---------------------------------------------------------
-    sequence_file: str = "HIV_2021_M_with_CRFs.fasta"
+    sequence_file: str = "sample.fasta"
     output_file_prefix: str = "capture_probes_ranked"
     max_sequences_to_process: Optional[int] = None
     
