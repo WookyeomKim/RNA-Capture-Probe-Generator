@@ -21,8 +21,17 @@ git clone [https://github.com/WookyeomKim/RNA-Capture-Probe-Generator.git](https
 cd RNA-Capture-Probe-Generator
 ```
 
-### Step 2: Install External Software (ViennaRNA)
-This tool requires ViennaRNA for accessibility scanning. It must be installed on your system (not via pip). The easiest way to install it is using Conda:
+### Step 2: Install External Software (Nupack and ViennaRNA)
+This tool requires two specialized algorithms for thermodynamic and accessibility calculations.
+
+**A. NUPACK (Thermodynamics)**
+NUPACK is required for Delta G calculations and must be installed from the official source. 
+1. Visit the official website: [http://www.nupack.org/](http://www.nupack.org/)
+2. Register for an account and download the appropriate version for your operating system.
+3. Follow their official installation guide to set it up in your Python environment.
+
+**B. ViennaRNA / RNAplfold (Accessibility)**
+This is a standalone software, NOT a Python package. Install it via Conda:
 ```bash
 conda install -c bioconda viennarna
 ```
